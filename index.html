@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Javascript/Typescript schema-based validation and sanitation">
+	<title>Node Best Practices</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+	<link rel="manifest" href="/assets/icons/site.webmanifest">
+	<link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg" color="#91bb3f">
+	<link rel="shortcut icon" href="/assets/icons/favicon.ico">
+	<meta name="apple-mobile-web-app-title" content="Node Best Practices">
+	<meta name="application-name" content="Node Best Practices">
+	<meta name="msapplication-TileColor" content="#2b5797">
+	<meta name="msapplication-config" content="/assets/icons/browserconfig.xml">
+	<meta name="theme-color" content="#22312d">
+	<link rel="stylesheet" href="/assets/vendor/theme-simple-dark.css">
+	<link rel="stylesheet" href="/assets/vendor/prism-onedark.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+	<style>
+		:root {
+			--theme-hue: 74;
+		}
+
+		.app-nav {
+			position: fixed;
+			text-shadow: 0px 1px 3px black, -1px 0px 3px black, 1px 0px 3px black;
+		}
+
+		.github-corner {
+			position: fixed;
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<div id="nav">
+			<a href="#/?id=nodejs-best-practices">Home</a>
+		</div>
+	</nav>
+	<div id="app"></div>
+	<script>
+		// 4. Docsify Configuration
+		window.$docsify = {
+			name: 'Node Best Practices',
+			repo: 'goldbergyoni/nodebestpractices',
+			homepage: 'README.md',
+			loadSidebar: true,
+			auto2top: true,
+			maxLevel: 3,
+			subMaxLevel: 1,
+			relativePath: true,
+			routerMode: 'hash',
+			executeScript: true,
+			logo: 'assets/images/banner-2.jpg',
+			alias: {
+				'/lang-(.*)/(.*)': '/$2.$1',
+				'.*/_sidebar.md': '/assets/_sidebar.md'
+			},
+			plugins: [
+				(hook, vm) => { window.$NBP(hook, vm) }
+			]
+		};
+	</script>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.min.js"></script>
+	<!-- Required: docsify + docsify-themeable -->
+	<script src="assets/vendor/docsify.js"></script>
+	<script src="assets/src/navbar.js"></script>
+	<script src="assets/vendor/emoji.min.js"></script>
+	<script src="assets/vendor/external-script.min.js"></script>
+	<script src="assets/vendor/docsify-themeable.min.js"></script>
+
+	<!-- 6. Docsify Plugins -->
+	<script src="assets/vendor/search.js"></script>
+	<script src="assets/vendor/docsify-remote-markdown.min.js"></script>
+	<script src="assets/vendor/docsify-pagination.min.js"></script>
+</body>
+
+</html>

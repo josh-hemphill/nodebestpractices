@@ -1,0 +1,19 @@
+
+- [Home](/README?id=main)
+- Detail Sections
+	- [Project Structure](/sections/)
+    - [Error Handling](/sections/)
+    - [Code Style](/sections/)
+    - [Testing And Overall Quality](/sections/)
+    - [Going To Production](/sections/)
+    - [Security](/sections/)
+    - [Performance (WIP)](/sections/)
+    - [Docker](/sections/)
+- 🌐 Language
+	- [:en: English](/README)
+	- [:brazil:Br. Portuguese](/lang-brazilian-portuguese/README)
+	- [:cn:Chinese](/lang-chinese/README)
+	- [:poland:Polish](/lang-polish/README)
+	- [:ru:Russian](/lang-russian/README)
+	- [:kr:Korean [WIP]](/lang-korean/README)
+	- [Others [WIP]](/README?id=translations)
